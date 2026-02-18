@@ -74,4 +74,4 @@ Logical-Circuit-Final-Project/
 
 ## Report
 
-전체 설계 배경, 구조, 시뮬레이션/FPGA 결과, 성능 비교는 **`final_report.pdf`**에 정리되어 있습니다.
+전체 설계 배경, 구조, 시뮬레이션/FPGA 결과, 성능 비교는 `final_report.pdf`에 정리되어 있습니다.
