@@ -32,7 +32,7 @@ Logical-Circuit-Final-Project/
 - `lib/`: 게이트레벨 구현에 사용되는 기본 블록(standard-cell)
 - `src/`: 컨트롤/연산/디스플레이 등 메인 RTL 모듈
 
----
+
 
 ## 프로젝트 설명
 
