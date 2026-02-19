@@ -1,11 +1,12 @@
 # Convolution Accelerator on FPGA (Logical Circuit Final Project)
 
+## 프로젝트 소개
 4×4 입력 행렬과 3×3 필터로 **2×2 Convolution(valid)** 결과를 계산하고, 결과를 7-segment에 표시하는 FPGA 프로젝트입니다.  
 같은 연산을 **Single PE / 2×2 Systolic Array / 3×3 Systolic Array** 세 가지 방식으로 구현해 구조와 성능 차이를 비교했습니다.
 
----
 
-## Repository structure
+
+## 저장소 구조
 
 ```text
 Logical-Circuit-Final-Project/
@@ -33,7 +34,7 @@ Logical-Circuit-Final-Project/
 
 ---
 
-## What’s inside
+## 프로젝트 설명
 
 - **Gate-level / Structural modeling 중심 설계**
   - PE 내부 MAC(shift + add 기반 곱셈, 누산기) 구성
@@ -47,7 +48,7 @@ Logical-Circuit-Final-Project/
 - **FPGA 출력**
   - 연산 완료 후 7-seg에 **3×3 Systolic의 결과 4개 + 2×2 Systolic의 결과 4개**를 순서대로 표시
 
----
+
 
 ## Architecture
 
@@ -58,7 +59,7 @@ Logical-Circuit-Final-Project/
 - **Display**: Binary → BCD 변환 후 7-segment 출력
 - **Top**: 전체 모듈 연결
 
----
+
 
 ## Performance (simulation)
 
@@ -70,7 +71,7 @@ Logical-Circuit-Final-Project/
 
 > 출력 크기(2×2)에 비해 3×3 구조는 PE 활용률이 낮아 2×2가 더 유리했습니다.
 
----
+
 
 ## Report
 
