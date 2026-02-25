@@ -4,6 +4,8 @@
 4×4 입력 행렬과 3×3 필터로 **2×2 Convolution(valid)** 결과를 계산하고, 결과를 7-segment에 표시하는 FPGA 프로젝트입니다.  
 같은 연산을 **Single PE / 2×2 Systolic Array / 3×3 Systolic Array** 세 가지 방식으로 구현해 구조와 성능 차이를 비교했습니다.
 
+## Report
+전체 설계 배경, 구조, 시뮬레이션/FPGA 결과, 성능 비교는 `final_report.pdf`에 정리되어 있습니다.
 
 
 ## 저장소 구조
@@ -51,6 +53,8 @@ Logical-Circuit-Final-Project/
 
 
 ## Architecture
+<img width="262" height="178.5" alt="image" src="https://github.com/user-attachments/assets/2f5518fd-3920-4820-a239-77140724e13c" />
+<img width="288.5" height="243.75" alt="image" src="https://github.com/user-attachments/assets/e69db52e-f72d-4ca7-8314-43e3c5f5cd50" />
 
 - **Controller**: FSM + counter로 모듈을 순차 활성화
 - **Memory**: 4×4 입력(16개) + 3×3 필터(9개) 고정값 저장/출력
@@ -64,6 +68,8 @@ Logical-Circuit-Final-Project/
 ## Performance (simulation)
 
 동일한 입력에 대해 계산 완료 시간(behavioral simulation) 비교 결과입니다.
+<img width="506.5" height="73.5" alt="image" src="https://github.com/user-attachments/assets/b6fd3a4e-52e9-454b-a18b-c258342b8948" />
+<img width="517.5" height="191" alt="image" src="https://github.com/user-attachments/assets/d48412fc-e55e-4f22-8716-ebccfea4abf4" />
 
 - **Single PE**: base  
 - **2×2 Systolic**: ~3.34× faster  
@@ -73,6 +79,3 @@ Logical-Circuit-Final-Project/
 
 
 
-## Report
-
-전체 설계 배경, 구조, 시뮬레이션/FPGA 결과, 성능 비교는 `final_report.pdf`에 정리되어 있습니다.
